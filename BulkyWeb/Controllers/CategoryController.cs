@@ -18,14 +18,14 @@ namespace BulkyWeb.Controllers
         public IActionResult Index()
         {
             List<Category> objCategoryList = _db.Categories.ToList();
-            return View(objCategoryList);
+            return View(objCategoryList); // returns the current view/page
         }
 
         // creates the POST controller of categories
         // which takes you to the POST view
         public IActionResult Create()
         {
-            return View();
+            return View(); // returns the current view/page
         }
         // VIEWS
 
