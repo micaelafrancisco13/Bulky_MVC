@@ -9,7 +9,7 @@ namespace BulkyWeb.Models
         [Key]
         public int Id { get; set; }
         [Required]
-        [DisplayName("Category Name")]
+        [DisplayName("Category Name")] // for client side UI or validation
         public string Name { get; set; }
         [DisplayName("Display Order")]
         public int DisplayOrder { get; set; }

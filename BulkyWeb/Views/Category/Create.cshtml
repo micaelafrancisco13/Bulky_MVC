@@ -6,8 +6,10 @@
             <h2 class="text-primary">Create Category</h2>
             <hr/>
         </div>
-       <div class="mb-3 row p-1">
-            <label asp-for="Name"  class="p-0"></label>
+        <div class="mb-3 row p-1">
+            @* asp-for binds the field to its value *@
+            @* the value of asp-for for label and input must be the same *@
+            <label asp-for="Name" class="p-0"></label>
             <input asp-for="Name" class="form-control"/>
         </div>
         <div class="mb-3 row p-1">
